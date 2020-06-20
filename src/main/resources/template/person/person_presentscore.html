@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCBLOCK-好友积分转赠</title>
+    <link th:href="@{../styles/top.css}" rel="stylesheet" type="text/css">
+    <script src="../js/person_function.js"></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body style="background-image:url('../imgs/person_query_background.jpg');background-repeat: no-repeat;background-size: 100% 100%;">
+<div class="container">
+    <div class="menuu">
+        <div class="navv" >
+            <ul >
+                <li><img src="../imgs/logo.png" style="width: 25px;height: 23px;float: left;padding: 8px"> </li>
+                <li ><a  href="../person" >返回中心</a> </li>
+                <li ><a  href="person_queryscore" >积分查询</a></li>
+                <li ><a  href="person_mall"  >积分商城</a> </li>
+                <li ><a  href="person_presentscore"  style="background-color: white;color: #00507C" >积分转赠</a> </li>
+                <li ><a  href="person_history" >消息历史</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainbox">
+        <div class="center-in-center" style="margin: 0 auto;width: 20%;height: 55%;background-color:rgba(255,255,255,0.6);text-align: center;">
+            <h2 style="padding-top: 30px;padding-bottom: 20px;color: dimgrey;font-weight: lighter">好友转赠</h2>
+                <input id="yourid" style="width: 75%;height: 10%;text-align: left;border: none" type="text" placeholder="请输入您的用户名" name="yourid" >
+                <input id="friendid" style="width: 75%;height: 10%;text-align: left;border: none;margin-top: 20px" type="text" placeholder="请输入您好友的用户名" name="friendid">
+                <input id="score_number" style="width: 75%;height: 10%;text-align: left;border: none;margin-top: 20px" type="text" placeholder="请输入您的转赠额度" name="score_number">
+                <input id="password" style="width: 75%;height: 10%;text-align: left;border: none;margin-top: 20px;margin-bottom: 10px" type="password" placeholder="请输入您的密码" name="password">
+                <button style="width: 40%;height: 8%;margin-top: 5px;cursor: pointer;background-color: #00517d;color: white;border: none" onclick="present()">确定</button>
+        </div>
+        <!--<form name="form1" action="" method="post">
+            <h1>好友积分转赠</h1>
+            <input class=input_1 id=username type=text size=15  name="mypublic"  placeholder=您的公钥><br />
+            <input class=input_1 id=password type=text size=15 name="friendpublic" placeholder=好友公钥><br />
+            <input class=input_1 id=username type=text size=15  name="number"  placeholder=转赠额度><br />
+            <input class=input_1 id=password type=text size=15 name="myprivate" placeholder=您的私钥 ><br /><br />
+
+            <input class=input_3 type="button" onclick="login()" value="确定" />
+            <input class=input_4 type="button"  onclick=document.form1.reset() value="重置" />
+        </form>
+        <script type="text/javascript" src="../js/person_present.js"></script>-->
+        <!--<div class="cont_centrar">
+            <div class="cont_login">
+                <div class="cont_info_log_sign_up">
+                    <div class="col_md_login">
+                        <div class="cont_ba_opcitiy">
+                            <h2>积分授信</h2>
+                            <p>向我行申请积分并发行</p>
+                            <button class="btn_login" onclick="cambiar_login()">填写</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cont_back_info">
+                    <div class="cont_img_back_grey"> <img th:src="${'../imgs/person_query_background.jpg'}" alt=""> </div>
+                </div>
+
+                <div class="cont_forms cont_forms_active_login">
+                    <div class="cont_img_back_"> <img th:src="${'../imgs/person_query_background.jpg'}" alt=""> </div>
+
+                    <div class="cont_form_login" style="opacity: 1; display: block;">
+                        <a href="#" onclick="ocultar_login_sign_up()"><i class="material-icons"></i></a>
+                        <h2>积分授信</h2>
+                        <input type="text" placeholder="您的积分公钥" >
+                        <input type="text" placeholder="申请积分数额">
+                        <input type="text" placeholder="您的建设银行卡号">
+                        <input type="password" placeholder="您的积分私钥">
+                        <button class="btn_login" onclick="cambiar_login()">确定</button>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+
+
+    </div>
+</div>
+
+<div class="footer">
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        相关连接跳转：
+        <a href="http://www.ccb.com/cn/home/indexv3"  target="_blank" style="color: darkgrey;font-size: 12px">
+            建设银行官方网站
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        联系我们：010-726726
+    </p>
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        中国建设银行积分链中心地址：广州市天河区北环大道3号 &nbsp;&nbsp;  邮编：518170
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        网站设计制作、管理：华南理工大学软件学院GXY团队
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        2020 © 华南理工大学软件学院GXY团队版权所有
+    </p>
+</div>
+</body>
+</html>

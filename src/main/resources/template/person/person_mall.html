@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCBLOCK-商城</title>
+    <link th:href="@{../styles/top.css}" rel="stylesheet" type="text/css">
+</head>
+<body >
+<div class="container">
+    <div class="menuu">
+        <div class="navv" >
+            <ul >
+                <li><img src="../imgs/logo.png" style="width: 25px;height: 23px;float: left;padding: 8px"> </li>
+                <li ><a  href="../person" >返回中心</a> </li>
+                <li ><a  href="person_queryscore"  >积分查询</a></li>
+                <li ><a  href="person_mall"  style="background-color: white;color: #00507C">积分商城</a> </li>
+                <li ><a  href="person_presentscore"  >积分转赠</a> </li>
+                <li ><a  href="person_history" >消息历史</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainbox">
+        <div class="topimage">
+            <img th:src="${'../imgs/mall_home2.jpg'}" style="height: auto;width: 100%;padding-bottom: 20px">
+        </div>
+        <div class="topwords">
+            <h3 class="what is ccbmall" style="font-size: 34px;font-weight: lighter;padding-bottom: 20px;text-align: center;color: grey">关于CCBMall</h3>
+            <div class="ccbmall" style="width: 100%;height:auto;padding-bottom:20px;text-align: center;color: grey">
+                <p style="font-size: 16px;margin: 0 auto;width: 50%;font-weight: lighter;text-align: left;padding-left: 80px;padding-right: 80px;padding-bottom: 5px">
+                    中国建设银行积分链致力于打造全新的积分式品牌商城，您可以使用常规的现金消费，也可以运用您持有的积分。
+                    颠覆传统电子商务凌乱的购物模式，创造品牌馆式的分区品牌呈现，为您营造最贴近线下实体店感受的购物体验。
+                    全球各大核心知名品牌现已入驻CCBMall，您可以在您热爱的品牌馆中尽情挑选时下最新的、最顶级的旗舰商品。
+                    更多您热爱的品牌正在与我们洽谈之中，敬请期待更多的品牌入驻CCBMall，我们将为您打造难忘的购物回忆
+                </p>
+            </div>
+            <img th:src="${'../imgs/icon/line.jpg'}" style="width: 100%;padding-top: 20px">
+        </div>
+        <div class="center">
+            <div class="center1">
+                <div class="shuma" style="padding-top: 30px;font-size: 30px;text-align: center;font-weight: lighter;color: grey">旗舰数码馆</div>
+                <div class="brands_icon" style="padding-bottom: 30px;padding-top: 40px;width: 50%;height: auto;margin: 0 auto;text-align: center">
+                    <div class="apple" style="float: left;width: 33%">
+                        <a href="brands/apple" >
+                            <img class="bigger" th:src="${'../imgs/icon/apple2.jpg'}" style="width: 35%;height: 35%">
+                        </a>
+                    </div>
+                    <div class="huawei" style="float: left;width: 33%">
+                        <a href="brands/huawei">
+                            <img class="bigger" th:src="${'../imgs/icon/huawei2.jpg'}" style="width: 35%;height: 35%">
+                        </a>
+                    </div>
+                    <div class="rog" style="float: right;width: 33%">
+                        <a href="brands/rog" >
+                            <img class="bigger" th:src="${'../imgs/icon/ROG2.jpg'}" style="width: 35%;height: 35%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="center2">
+                <img th:src="${'../imgs/icon/line.jpg'}" style="width: 100%;padding-top: 40px">
+                <div class="clothes" style="padding-top: 30px;font-size: 30px;text-align: center;font-weight: lighter;color: grey">奢侈服装馆</div>
+                <div class="brands_icon" style="padding-bottom: 30px;padding-top: 40px;width: 50%;height: auto;margin: 0 auto;text-align: center;">
+                    <div class="dior" style="float: left;width: 33%;">
+                        <a href="brands/dior" >
+                            <img class="bigger" th:src="${'../imgs/icon/dior2.jpg'}" style="width: 37%;height: 37%">
+                        </a>
+                    </div>
+                    <div class="hermes" style="float: left;width: 33%">
+                        <a href="brands/hermes">
+                            <img class="bigger" th:src="${'../imgs/icon/Hermes2.jpg'}" style="width: 39%;height: 39%">
+                        </a>
+                    </div>
+                    <div class="chanel" style="float: right;width: 33%">
+                        <a href="brands/chanel" >
+                            <img class="bigger" th:src="${'../imgs/icon/chanel2.jpg'}" style="width: 35%;height: 35%">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="center3">
+                <img th:src="${'../imgs/icon/line.jpg'}" style="width: 100%;padding-top: 40px">
+                <div class="life" style="padding-top: 30px;font-size: 30px;text-align: center;font-weight: lighter;color: grey">生活运动馆</div>
+                <div class="brands_icon" style="padding-bottom: 30px;padding-top: 40px;width: 50%;height: auto;margin: 0 auto;text-align: center">
+                    <div class="aj" style="float: left;width: 33%">
+                        <a href="brands/aj" >
+                            <img class="bigger" th:src="${'../imgs/icon/aj.jpg'}" style="width: 37%;height: 37%">
+                        </a>
+                    </div>
+                    <div class="adidas" style="float: left;width: 33%">
+                        <a href="brands/adidas">
+                            <img class="bigger" th:src="${'../imgs/icon/Adidas2.jpg'}" style="width: 37%;height: 37%">
+                        </a>
+                    </div>
+                    <div class="nike" style="float: right;width: 33%">
+                        <a href="brands/nike" >
+                            <img class="bigger" th:src="${'../imgs/icon/nike2.jpg'}" style="width: 37%;height: 37%">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="center4">
+                <img th:src="${'../imgs/icon/line.jpg'}" style="width: 100%;padding-top: 40px">
+                <div class="watches" style="padding-top: 30px;font-size: 30px;text-align: center;font-weight: lighter;color: grey">精英钟表馆</div>
+                <div class="brands_icon" style="padding-bottom: 30px;padding-top: 40px;width: 50%;height: auto;margin: 0 auto;text-align: center">
+                    <div class="baidafeili" style="float: left;width: 33%">
+                        <a href="brands/baidafeili" >
+                            <img class="bigger" th:src="${'../imgs/icon/baidafeili2.jpg'}" style="width: 47%;height: 47%">
+                        </a>
+                    </div>
+                    <div class="jiangshidandun" style="float: left;width: 33%">
+                        <a href="brands/jiangshidandun">
+                            <img class="bigger" th:src="${'../imgs/icon/jiangshidandun.jpg'}" style="width: 69%;height: 69%">
+                        </a>
+                    </div>
+                    <div class="rolex" style="float: right;width: 33%">
+                        <a href="brands/rolex" >
+                            <img class="bigger" th:src="${'../imgs/icon/rolex.jpg'}" style="width: 37%;height: 37%">
+                        </a>
+                    </div>
+                </div>
+                <img th:src="${'../imgs/icon/line.jpg'}" style="width: 100%;padding-top: 50px">
+            </div>
+        </div>
+        <div class="join us" style="width: 1000px;height: 400px;padding-top: 40px;margin: 0 auto;">
+            <div class="peoplepicture" style="float: right;width: 50%;">
+                <img src="../imgs/people.png" style="width: 500px;height: 323.3px;">
+            </div>
+            <div class="words" style="float: left;width: 50%;padding-top: 50px">
+                <h3 style="color: grey;font-size: 34px;text-align: left;font-weight: lighter;padding-bottom: 15px">入驻CCBLOCK</h3>
+                <p style="font-weight: lighter;text-align: left;font-size: 16px;color: grey">前往您当地的建设银行服务网点办理注册</p>
+                <p style="font-weight: lighter;text-align: left;font-size: 16px;color: grey">或是在本站导航直接注册上链进入积分链</p>
+                <p style="font-weight: lighter;text-align: left;font-size: 16px;color: grey">与我们轻松洽谈品牌商品上架与更新业务</p><br>
+                <p style="font-weight: lighter;text-align: left;font-size: 16px;color: grey">您的企业不需要拥有庞大的社会规模</p>
+                <p style="font-weight: lighter;text-align: left;font-size: 16px;color: grey">您的企业不需要任何高昂的入驻费用</p><br>
+                <p style="font-weight: lighter;text-align: left;font-size: 16px;color: grey">我们诚挚邀请全球各大企业入驻CCBLOCK</p>
+                <p style="font-weight: lighter;text-align: left;font-size: 16px;color: grey">携手共创美好未来，共创电子商务全新世界</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        相关连接跳转：
+        <a href="http://www.ccb.com/cn/home/indexv3"  target="_blank" style="color: darkgrey;font-size: 12px">
+            建设银行官方网站
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        联系我们：010-726726
+    </p>
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        中国建设银行积分链中心地址：广州市天河区北环大道3号 &nbsp;&nbsp;  邮编：518170
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        网站设计制作、管理：华南理工大学软件学院GXY团队
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        2020 © 华南理工大学软件学院GXY团队版权所有
+    </p>
+</div>
+</body>
+</html>

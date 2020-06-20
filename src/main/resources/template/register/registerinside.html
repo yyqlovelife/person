@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCBLOCK-注册</title>
+    <link th:href="@{../styles/top.css}" rel="stylesheet" type="text/css">
+    <script src="../js/register_home.js"></script>
+    <script src="../js/jquery-3.5.1.min.js"></script>
+</head>
+
+<body>
+<div class="container" >
+    <div class="menu">
+        <div class="nav" >
+            <ul >
+                <li><img src="../imgs/logo.png" style="width: 25px;height: 23px;float: left;padding: 8px;"> </li>
+                <li ><a  href="../home" title="中国建设银行积分链中心">首页</a> </li>
+                <!--<li ><a  href="enterprise" title="企业中心">企业中心</a></li>
+                <li ><a  href="person" title="个人中心" >个人中心</a> </li>-->
+                <li ><a  href="../register" title="注册登录" style="background-color: white;color: #00507C">注册登录</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainbox">
+        <div class="content" style="width: 80%;height: auto;margin: 0 auto;">
+            <div class="pic" style="width:80%;height: auto;margin: 0 auto">
+                <img src="../imgs/registerinside.png" style="width: 100%;height: 100%">
+            </div>
+            <div class="center-in-center" style="margin: 0 auto;width: 20%;height: 65%;background-color:rgba(255,255,255,0.9);text-align: center;">
+                <h2 style="padding-top: 30px;padding-bottom: 20px;color: dimgrey;font-weight: lighter">账户注册</h2>
+                <input id="id" style="width: 75%;height: 8%;text-align: left;border: none" type="text" placeholder="请输入您的用户名" name="id" >
+                <input id="tel_number" style="width: 75%;height: 8%;text-align: left;border: none;margin-top: 20px" type="text" placeholder="请输入您的电话号码" name="tel_number">
+                <input id="card_number" style="width: 75%;height: 8%;text-align: left;border: none;margin-top: 20px" type="text" placeholder="请输入您的建行储蓄卡号" name="card_number">
+                <input id="address" style="width: 75%;height: 8%;text-align: left;border: none;margin-top: 20px" type="text" placeholder="请输入您的收货地址" name="address">
+                <input id="password" style="width: 75%;height: 8%;text-align: left;border: none;margin-top: 20px;margin-bottom: 10px" type="password" placeholder="请输入您的密码" name="password">
+                <button style="width: 40%;height: 7%;margin-top: 5px;cursor: pointer;background-color: #00517d;color: white;border: none" onclick="register()">确定</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="footer">
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        相关连接跳转：
+        <a href="http://www.ccb.com/cn/home/indexv3"  target="_blank" style="color: darkgrey;font-size: 12px">
+            建设银行官方网站
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        联系我们：010-726726
+    </p>
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        中国建设银行积分链中心地址：广州市天河区北环大道3号 &nbsp;&nbsp;  邮编：518170
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        网站设计制作、管理：华南理工大学软件学院GXY团队
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        2020 © 华南理工大学软件学院GXY团队版权所有
+    </p>
+</div>
+</body>
+</html>

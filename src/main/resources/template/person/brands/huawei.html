@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCBMall-华为</title>
+    <link th:href="@{../../styles/top.css}" rel="stylesheet" type="text/css">
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/mall_function.js"></script>
+</head>
+
+
+<body style="background-color:whitesmoke">
+<div class="container">
+    <div class="menu">
+        <div class="nav" >
+            <ul >
+                <li><img src="../../imgs/logo.png" style="width: 25px;height: 23px;float: left;padding: 8px"> </li>
+                <li ><a  href="../../person" >个人中心</a> </li>
+                <li ><a  href="../person_mall"  style="background-color: white;color: #00507C">返回商城</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainbox">
+        <div class="topimage">
+            <img th:src="${'../../imgs/brands/huawei/home.jpg'}" style="height: auto;width: 100%;padding-bottom: 20px">
+        </div>
+        <div class="center" style="width: 100%;text-align: center;margin: 0 auto;height: 100%">
+            <div class="line1" style="padding-bottom: 30px;padding-top: 40px;width: 80%;height: auto;margin: 0 auto;text-align: center;">
+                <div class="item1_container" style="float: left;width: 50%;">
+                    <div class="item1" style="background-color: white;width: 95%;height: 90%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">HUAWEI MatePad Pro 5G</p>
+                        <p style="color: grey">90%屏占比2k绚丽全面屏</p>
+                        <p style="color: grey;padding-bottom: 10px">多屏协同让平板与手机无缝连接</p>
+                        <img class="bigger" src="../../imgs/brands/huawei/matepad_img.png" style="width: 70%;height: 70%;text-align: center">
+                        <p style="color: #00507C;padding-bottom: 5px;cursor: pointer;" onclick='moneybuy("1499","MatePadPro5G","huawei")'>¥3299元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("1499","MatePadPro5G","huawei")'>1499 积分购买</p>
+                    </div>
+                </div>
+                <div class="item2_container" style="float: left;width: 50%;">
+                    <div class="item2" style="float: right;background-color: white;width: 95%;height: 90%;text-align: center">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">HUAWEI Mate Xs 5G</p>
+                        <p style="color: grey">麒麟990 5G Soc新品，7nm+制程工艺</p>
+                        <p style="color: grey;padding-bottom: 10px">4500mAh容量电池，55W华为超级快充</p>
+                        <img class="bigger" src="../../imgs/brands/huawei/mate-x-s-v6.png" style="width: 70%;height: 70%;text-align: center">
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer;" onclick='moneybuy("8099","HUAWEIMateXs5G","huawei")'>¥16999元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("8099","HUAWEIMateXs5G","huawei")'>8099 积分购买</p>
+                        <!--<div style="width: 40%;height: 40px;padding-bottom: 10px;border-radius: 9px;background-color: #00507C;margin: 0 auto;text-align: center"></div>-->
+                    </div>
+                </div>
+            </div>
+            <div class="line2" style="padding-bottom: 30px;padding-top: 40px;width: 80%;height: auto;margin: 0 auto;text-align: center;">
+                <div class="item1_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item1" style="background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">HUAWEI 智慧屏X65</p>
+                        <p style="color: grey">2400万超广角AI慧眼</p>
+                        <p style="color: grey;padding-bottom: 10px">14喇叭全屏声场</p>
+                        <img class="bigger" src="../../imgs/brands/huawei/x65-v3.png" style="width: 70%;height: 70%;text-align: center">
+                        <p style="color: #00507C;padding-bottom: 5px;cursor: pointer;" onclick='moneybuy("12199","HUAWEISmartScreenX65","huawei")'>¥24999元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("12199","HUAWEISmartScreenX65","huawei")'>12199 积分购买</p>
+                    </div>
+                </div>
+                <div class="item2_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item2" style="float: right;background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">HUAWEI WATCH GT 2e</p>
+                        <p style="color: grey">麒麟A1芯片，两周强劲续航</p>
+                        <p style="color: grey;padding-bottom: 10px">不锈钢表框，多彩运动表带</p>
+                        <img class="bigger" src="../../imgs/brands/huawei/gt-2e-v3.png" style="width: 70%;height: 70%;text-align: center">
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer;" onclick='moneybuy("599","HUAWEIWatchGT2e","huawei")'>¥1288元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("599","HUAWEIWatchGT2e","huawei")'>599 积分购买</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line3" style="padding-bottom: 30px;padding-top: 40px;width: 80%;height: auto;margin: 0 auto;text-align: center;">
+                <div class="item1_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item1" style="background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">HUAWEI P40 Pro</p>
+                        <p style="color: grey">麒麟990 5G Soc新品，7nm+制程工艺</p>
+                        <p style="color: grey;padding-bottom: 10px">极限满溢屏，10倍光学变焦</p>
+                        <div class="bigger" style="padding-top: 40px;padding-bottom:40px;width: 30%;height: 30%;margin: 0 auto;text-align: center">
+                            <img src="../../imgs/brands/huawei/p40-pro.png" style="width: 70%;height: 70%;text-align: center">
+                        </div>
+
+                        <p style="color: #00507C;padding-bottom: 5px;cursor: pointer;" onclick='moneybuy("2999","HUAWEIP40Pro","huawei")'>¥5999元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("2999","HUAWEIP40Pro","huawei")'>2999 积分购买</p>
+                    </div>
+                </div>
+                <div class="item2_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item2" style="float: right;background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">HUAWEI Mate30 Pro</p>
+                        <p style="color: grey">麒麟990 5G Soc新品，7nm+制程工艺</p>
+                        <p style="color: grey;padding-bottom: 10px">全曲面瀑布屏，4500mAh大容量电池</p>
+                        <div class="bigger" style="padding-top: 40px;padding-bottom:40px;width: 30%;height: 30%;margin: 0 auto;text-align: center">
+                            <img src="../../imgs/brands/huawei/mate30-pro-5g.png" style="width: 70%;height: 70%;text-align: center">
+                        </div>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer;" onclick='moneybuy("3099","HUAWEIMate30Pro","huawei")'>¥6299元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("3099","HUAWEIMate30Pro","huawei")'>3099 积分购买</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line4" style="padding-bottom: 30px;padding-top: 40px;width: 80%;height: auto;margin: 0 auto;text-align: center;">
+                <div class="item1_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item1" style="background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">HUAWEI MateBook XPro 2020</p>
+                        <p style="color: grey">3k绚丽全面屏，对比度高达1500:1</p>
+                        <p style="color: grey;padding-bottom: 10px">1.33kg极致轻薄，整机CNC钻切工艺</p>
+                        <img class="bigger" src="../../imgs/brands/huawei/matebook-d-15.png" style="width: 70%;height: 70%;text-align: center">
+                        <p style="color: #00507C;padding-bottom: 5px;cursor: pointer;" onclick='moneybuy("2999","HUAWEIMateBookXPro2020","huawei")'>¥5999元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("2999","HUAWEIMateBookXPro2020","huawei")'>2999 积分购买</p>
+                    </div>
+                </div>
+                <div class="item2_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item2" style="float: right;background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">HUAWEI MateBook13 2020</p>
+                        <p style="color: grey">14.9mm超薄机身，12小时工作续航</p>
+                        <p style="color: grey;padding-bottom: 10px">第十代酷睿i7-10510U处理器，最高睿频4.9GHz</p>
+                        <img class="bigger" src="../../imgs/brands/huawei/matebook-13-2020.png" style="width: 70%;height: 70%;text-align: center">
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer;" onclick='moneybuy("6299","HUAWEIMateBook132020","huawei")'>¥6299元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("3099","HUAWEIMateBook132020","huawei")'>3099 积分购买</p>
+                    </div>
+                </div>
+            </div>
+            <div class="linebottom" style="padding-bottom: 30px;padding-top: 40px;width: 80%;height: auto;margin: 0 auto;text-align: center;">
+                <img th:src="${'../../imgs/brands/huawei/background.jpg'}" style="width: 100%;height: auto">
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer" style="background-color: #00507C">
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        相关连接跳转：
+        <a href="http://www.ccb.com/cn/home/indexv3"  target="_blank" style="color: darkgrey;font-size: 12px">
+            建设银行官方网站
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        联系我们：010-726726
+    </p>
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        中国建设银行积分链中心地址：广州市天河区北环大道3号 &nbsp;&nbsp;  邮编：518170
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        网站设计制作、管理：华南理工大学软件学院GXY团队
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        2020 © 华南理工大学软件学院GXY团队版权所有
+    </p>
+</div>
+</body>
+</html>

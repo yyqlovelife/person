@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCBMall-苹果</title>
+    <link th:href="@{../../styles/top.css}" rel="stylesheet" type="text/css">
+    <script src="../../js/jquery-3.5.1.min.js"></script>
+    <script src="../../js/mall_function.js"></script>
+</head>
+<body style="background-color: whitesmoke">
+<div class="container">
+    <div class="menu">
+        <div class="nav" >
+            <ul >
+                <li><img src="../../imgs/logo.png" style="width: 25px;height: 23px;float: left;padding: 8px"> </li>
+                <li ><a  href="../../person" >个人中心</a> </li>
+                <li ><a  href="../person_mall"  style="background-color: white;color: #00507C">返回商城</a> </li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainbox">
+        <div class="topimage">
+            <img th:src="${'../../imgs/brands/apple/home.jpg'}" style="height: auto;width: 100%;padding-bottom: 20px">
+        </div>
+        <div class="center" style="width: 100%;text-align: center;margin: 0 auto;height: 100%">
+            <div class="line1" style="padding-bottom: 30px;padding-top: 40px;width: 80%;height: auto;margin: 0 auto;text-align: center;">
+                <div class="item1_container" style="float: left;width: 50%;">
+                    <div class="item1" style="background-color: white;width: 95%;height: 90%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">Apple IPad Pro</p>
+                        <p style="color: grey">dToF激光雷达扫描仪</p>
+                        <p style="color: grey;padding-bottom: 10px">120Hz屏幕刷新率，700尼特亮度</p>
+                        <img class="bigger" th:src="${'../../imgs/brands/apple/ipadpro.jpg'}" style="width: 70%;height: 70%;text-align: center">
+                        <p style="color: #00507C;padding-top: 10px;padding-bottom: 5px;cursor: pointer;" onclick='moneybuy("3299","AppleIpadPro","pingguo")'>¥7899元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("3299","AppleIpadPro","pingguo")'>3299 积分购买</p>
+                    </div>
+                </div>
+                <div class="item2_container" style="float: left;width: 50%;">
+                    <div class="item2" style="float: right;background-color: white;width: 95%;height: 90%;text-align: center">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">Apple IPad Air</p>
+                        <p style="color: grey">6.1毫米超薄机身</p>
+                        <p style="color: grey;padding-bottom: 10px">A12仿生四核处理器</p>
+                        <img class="bigger" th:src="${'../../imgs/brands/apple/ipadair.jpg'}" style="width: 70%;height: 70%;text-align: center;padding-top: 30px">
+                        <p style="color: #00507C;padding-top: 30px;padding-bottom: 10px;cursor: pointer;" onclick='moneybuy("1699","AppleIPadAir","pingguo")'>¥3896元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 15px;cursor: pointer" onclick='scorebuy("1699","AppleIPadAir","pingguo")'>1699 积分购买</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line2" style="padding-bottom: 30px;padding-top: 40px;width: 80%;height: auto;margin: 0 auto;text-align: center;">
+                <div class="item1_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item1" style="background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">Apple IPhone11 ProMax</p>
+                        <p style="color: grey">全新长焦与广角镜头，提供沉浸式界面</p>
+                        <p style="color: grey;padding-bottom: 10px">A13仿生处理器，1200尼特视网膜屏幕</p>
+                        <img class="bigger" th:src="${'../../imgs/brands/apple/11pro.jpg'}" style="width: 70%;height: 70%;text-align: center">
+                        <p style="color: #00507C;padding-bottom: 5px;cursor: pointer;" onclick='moneybuy("4299","AppleIPhone11ProMax","pingguo")'>¥8999元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("4299","AppleIPhone11ProMax","pingguo")'>4299 积分购买</p>
+                    </div>
+                </div>
+                <div class="item2_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item2" style="float: right;background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">Apple IPhone11</p>
+                        <p style="color: grey">增强夜拍模式，越暗越倾心</p>
+                        <p style="color: grey;padding-bottom: 10px">A13仿生处理器，6色多项选择</p>
+                        <img class="bigger" th:src="${'../../imgs/brands/apple/11.jpg'}" style="width: 65%;height: 65%;text-align: center">
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer;" onclick='moneybuy("2699","AppleIPhone11","pingguo")'>¥5499元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("2699","AppleIPhone11","pingguo")'>2699 积分购买</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line3" style="padding-bottom: 30px;padding-top: 40px;width: 80%;height: auto;margin: 0 auto;text-align: center;">
+                <div class="item1_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item1" style="background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">Apple MacBook Pro16</p>
+                        <p style="color: grey">全新妙控键盘，历来最大电池</p>
+                        <p style="color: grey;padding-bottom: 10px">最高可选配64GB内存与8TB固态硬盘</p>
+                        <img class="bigger" th:src="${'../../imgs/brands/apple/mac.jpg'}" style="width: 70%;height: 70%;text-align: center">
+                        <p style="color: #00507C;padding-bottom: 5px;cursor: pointer;" onclick='moneybuy("9799","AppleMacBookPro16","pingguo")'>¥19999元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("9799","AppleMacBookPro16","pingguo")'>9799 积分购买</p>
+                    </div>
+                </div>
+                <div class="item2_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item2" style="float: right;background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">Apple iMac</p>
+                        <p style="color: grey">迄今最绚丽、最明亮的视网膜5K显示屏</p>
+                        <p style="color: grey;padding-bottom: 10px">10亿色彩，Turbo Boost睿频高达5GHz</p>
+                        <img class="bigger" th:src="${'../../imgs/brands/apple/imac.jpg'}" style="width: 70%;height: 70%;text-align: center">
+                        <p style="color: #00507C;padding-top: 10px;padding-bottom: 10px;cursor: pointer;" onclick='moneybuy("7599","AppleiMac","pingguo")'>¥15399元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 15px;cursor: pointer" onclick='scorebuy("7599","AppleiMac","pingguo")'>7599 积分购买</p>
+                    </div>
+                </div>
+            </div>
+            <div class="line4" style="padding-bottom: 30px;padding-top: 40px;width: 80%;height: auto;margin: 0 auto;text-align: center;">
+                <div class="item1_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item1" style="background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">Apple Watch5</p>
+                        <p style="color: grey">永不熄灭的视网膜显示屏</p>
+                        <p style="color: grey;padding-bottom: 20px">摔倒检测、全球紧急呼叫</p>
+                        <img class="bigger" th:src="${'../../imgs/brands/apple/watch.jpg'}" style="width: 40%;height: 40%;text-align: center">
+                        <p style="color: #00507C;padding-top: 30px;padding-bottom: 5px;cursor: pointer;" onclick='moneybuy("1099","AppleWatch5","pingguo")'>¥3299元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("1099","AppleWatch5","pingguo")'>1099 积分购买</p>
+                    </div>
+                </div>
+                <div class="item2_container" style="float: left;width: 50%;padding-top: 60px">
+                    <div class="item2" style="float: right;background-color: white;width: 95%;height: 100%">
+                        <p style="font-size: 30px;padding-top: 40px;padding-bottom: 10px">Apple AirPods Pro</p>
+                        <p style="color: grey">主动降噪，通透模式，可选耳塞尺寸</p>
+                        <p style="color: grey;padding-bottom: 40px">5小时倾心续航，无懈可击</p>
+                        <img class="bigger" th:src="${'../../imgs/brands/apple/AirPodspro.jpg'}" style="width: 30%;height: 30%;text-align: center">
+                        <p style="color: #00507C;padding-top: 45px;padding-bottom: 10px;cursor: pointer;" onclick='moneybuy("999","AppleAirPodsPro","pingguo")'>¥1999元 现金购买</p>
+                        <p style="color: #00507C;padding-bottom: 10px;cursor: pointer" onclick='scorebuy("999","AppleAirPodsPro","pingguo")'>999 积分购买</p>
+                    </div>
+                </div>
+            </div>
+            <div class="linebottom" style="padding-bottom: 30px;padding-top: 40px;width: 80%;height: auto;margin: 0 auto;text-align: center;">
+                <img th:src="${'../../imgs/brands/huawei/background.jpg'}" style="width: 100%;height: auto">
+            </div>
+        </div>
+    </div>
+
+</div>
+<div class="footer" style="background-color: #00507C;">
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        相关连接跳转：
+        <a href="http://www.ccb.com/cn/home/indexv3"  target="_blank" style="color: darkgrey;font-size: 12px">
+            建设银行官方网站
+        </a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+        联系我们：010-726726
+    </p>
+    <p style="text-align: center;color: darkgrey;font-size: 12px;">
+        中国建设银行积分链中心地址：广州市天河区北环大道3号 &nbsp;&nbsp;  邮编：518170
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        网站设计制作、管理：华南理工大学软件学院GXY团队
+    </p>
+    <p style="text-align: center;font-size: 12px;color: darkgray">
+        2020 © 华南理工大学软件学院GXY团队版权所有
+    </p>
+</div>
+</body>
+</html>

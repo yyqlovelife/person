@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CCBLOCK-个人积分查询</title>
+    <link th:href="@{../styles/top.css}" rel="stylesheet" type="text/css">
+    <script src="../js/jquery-3.5.1.min.js"></script>
+    <script src="../js/person_function.js"></script>
+<!--    <script src="../js/history_function.js"></script>-->
+    <script>
+        $(document).ready(function(){
+            var id=prompt("为了确保您的安全，请再次输入您的用户名","")
+            var password=prompt("请输入您的密码","",)
+            if(id==''){
+                alert('您的用户名不能为空！');
+            }
+            if(password==''){
+                alert('您的密码不能为空！');
+            }
+            else {
+                $.ajax({
+                    url : "http://106.55.63.99:8081/api/historyP",//请求url
+                    dataType: "json",//后端传到前端的数据格式
+                    type: "get",//请求方式
+                    async: true,//是否异步请求
+                    data: {'id': id, 'password': password},
+                    success: function (result) {
+                        if(result.statecode==1){
+                            alert('用户名密码错误，请刷新页面重新输入')
+                        };
+                        if(result.statecode==3){
+                            showData(result.datalist);
+                        }
+                    },
+                    error: function (datalist) {
+                        alert("查询异常！")
+                    }
+                })
+            }
+        })
+        function showData(datalist) {
+            var str = "";//表格内容
+            for (var i = 0; i < datalist.length; i++) {
+                  //拼接表格的行和列
+                 str = "<tr><td class='dealtime'>" + datalist[i].time + "</td><td class='deal'>" + datalist[i].detail + "</td><td>积分" + datalist[i].score_change + "</td></tr>";
+                 //追加到table中
+                 $("#historycontext").append(str);
+            }
+        }
+    </script>
+</head>
+
+
+<body style="background-color: whitesmoke">
+<div class="container">
+    <div class="menuu">
+        <div class="navv" >
+            <ul >
+                <li><img src="../imgs/logo.png" style="width: 25px;height: 23px;float: left;padding: 8px"> </li>
+                <li ><a  href="../person" >返回中心</a> </li>
+                <li ><a  href="person_queryscore"  >积分查询</a></li>
+                <li ><a  href="person_mall"  >积分商城</a> </li>
+                <li ><a  href="person_presentscore"  >积分转赠</a> </li>
+                <li ><a  href="person_history" style="background-color: white;color: #00507C" >消息历史</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="mainbox">
+        <div id="history" style="width: 75%;padding-top: 20px;height: auto;margin: 0 auto;background-color: white;box-shadow: #666 0px 0px 20px;">
+            <div style="width: 75%;margin: 0 auto"><p style="padding-top: 14px;background-color: white;font-size: 20px;padding-bottom: 14px;">区块链交易记录</p></div>
+            <div style="width: 75%;margin: 0 auto;background-color: white"><hr/></div>
+            <div  style="width: 75%;height: 700px;margin: 0 auto;padding-top: 20px;background-color: white;padding-bottom: 20px;">
+                <table id="historycontext" class="historytable">
+                </table>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>

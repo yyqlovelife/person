@@ -1,0 +1,44 @@
+encrypt-type: # 0：普通， 1：国密
+  encrypt-type: 0
+
+group-channel-connections-config:
+  caCert: classpath:ca.crt
+  sslCert: classpath:sdk.crt
+  sslKey: classpath:sdk.key
+  all-channel-connections:
+    - group-id: 1 #group ID
+      connections-str:
+        - 106.55.63.99:20203 # node listen_ip:channel_listen_port
+#        - 192.168.88.108:20201
+#    - group-id: 2
+#      connections-str:
+#        - 192.168.88.108:20202 # node listen_ip:channel_listen_port
+#        - 192.168.88.108:20203
+
+channel-service:
+  group-id: 1 # sdk实际连接的群组
+  agency-name: user # 机构名称
+
+accounts:
+  pem-file: 0xf6d30257e43ac97d10de2bb009195bd7b11413d1.pem
+  p12-file: 0x7cae2f780b4914638a04e160f963d9f5df61c4ef.p12
+  password: 123456
+
+
+mybatis:
+  mapper-locations: classpath:mybatis/mapper/*.xml
+
+spring:
+  thymeleaf:
+    prefix: classpath:/template/
+    cache: false
+  datasource:
+    url: jdbc:mysql://localhost:3306/ccchain?useUnicode=true&characterEncoding=UTF-8&useSSL=false
+    username: another_root
+    password: password
+    driver-class-name: com.mysql.jdbc.Driver
+
+server:
+  port: 8081
+
+
